@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bing Li (Li Bing) | Founder & Chief AI Scientist @ Thuspine</title>
+<meta name="description" content="Bing Li - Founder & Chief AI Scientist at Thuspine. Building the AI Infrastructure for Human Surface Physiological Data. Flexible Electronics x Vertical AI x Digital Therapeutics.">
+<style>
+:root{
+  --accent:#0b5fff;
+  --accent-2:#0a4bcc;
+  --ink:#16202e;
+  --muted:#5b6b7f;
+  --line:#e4e9f1;
+  --bg:#ffffff;
+  --bg-soft:#f6f8fc;
+  --radius:14px;
+  --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter","Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;font-size:1.15rem;color:var(--ink)}
+.brand span{color:var(--accent)}
+.links{display:flex;gap:26px}
+.links a{color:var(--muted);font-weight:500;font-size:.95rem}
+.links a:hover{color:var(--accent);text-decoration:none}
+.menu-btn{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink);cursor:pointer}
+.hero{padding:72px 0 60px;background:radial-gradient(1200px 500px at 80% -10%,rgba(11,95,255,.10),transparent 60%),linear-gradient(180deg,#fbfcff,var(--bg))}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:14px}
+.hero h1{font-size:2.6rem;line-height:1.15;font-weight:800;margin-bottom:2px}
+.hero .cn{font-size:1.2rem;color:var(--muted);font-weight:600;margin-bottom:18px}
+.tagline{font-size:1.12rem;color:var(--ink);font-weight:600;margin-bottom:14px}
+.role{display:inline-block;background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.9rem;color:var(--muted);font-weight:600;margin-bottom:22px}
+.role b{color:var(--accent)}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.socials a{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:9px;padding:9px 15px;font-size:.88rem;font-weight:600}
+.socials a:hover{background:var(--accent);text-decoration:none}
+.socials svg{width:16px;height:16px;fill:currentColor}
+.avatar-box{display:flex;flex-direction:column;align-items:center}
+.avatar{width:230px;height:230px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:3.4rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),#4d8bff);box-shadow:0 18px 40px rgba(11,95,255,.28)}
+.avatar-tip{margin-top:14px;font-size:.82rem;color:var(--muted)}
+section{padding:62px 0}
+section.soft{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-title{font-size:1.7rem;font-weight:800;margin-bottom:6px}
+.sec-sub{color:var(--muted);margin-bottom:34px;max-width:760px}
+.about p{font-size:1.05rem;color:var(--ink);margin-bottom:18px}
+.about p:last-child{margin-bottom:0}
+.grid-4{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,40,80,.08);border-color:#cfdcfb}
+.card .ico{width:44px;height:44px;border-radius:11px;background:rgba(11,95,255,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.card .ico svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.08rem;font-weight:700;margin-bottom:8px}
+.card p{font-size:.94rem;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 18px;text-align:center}
+.stat .num{font-size:2rem;font-weight:800;color:var(--accent);line-height:1.1}
+.stat .lbl{font-size:.86rem;color:var(--muted);margin-top:8px}
+.hl{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.hl-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.hl-box h3{font-size:1.25rem;margin-bottom:6px}
+.hl-box .org{color:var(--accent);font-weight:600;font-size:.92rem;margin-bottom:16px}
+.hl-box ul{list-style:none}
+.hl-box li{padding-left:26px;position:relative;margin-bottom:13px;color:var(--ink);font-size:.98rem}
+.hl-box li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:12px;border-radius:50%;background:var(--accent);opacity:.85}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.badge{background:rgba(11,95,255,.08);color:var(--accent-2);border:1px solid #d3e1ff;border-radius:8px;padding:6px 13px;font-size:.84rem;font-weight:600}
+.contact{text-align:center}
+.contact .mail{font-size:1.3rem;font-weight:700;color:var(--accent)}
+.foot{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .avatar-box{order:-1}
+  .socials{justify-content:center}
+  .grid-4,.hl{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .links{display:none}
+  .links.open{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:16px 24px;gap:14px}
+  .menu-btn{display:block}
+  .hero h1{font-size:2rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">Bing <span>Li</span></div>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#impact">Impact</a>
+      <a href="#venture">Venture</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="menu-btn" onclick="document.getElementById('links').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Founder &middot; Chief AI Scientist</div>
+      <h1>Bing Li</h1>
+      <div class="cn">Li Bing (Chinese name)</div>
+      <div class="tagline">Building the AI Infrastructure for Human Surface Physiological Data.</div>
+      <div class="role">Flexible Electronics <b>&times;</b> Vertical AI <b>&times;</b> Digital Therapeutics</div>
+      <div class="socials">
+        <a href="mailto:you@example.com"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a>
+        <a href="https://www.linkedin.com/in/%E5%86%B0-%E6%9D%8E-b78804442/" target="_blank">in&nbsp;LinkedIn</a>
+        <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/" target="_blank">Scholar</a>
+      </div>
+    </div>
+    <div class="avatar-box">
+      <!-- Replace this circle with your photo: <img src="assets/photo.jpg" class="avatar" style="object-fit:cover"> -->
+      <div class="avatar">BL</div>
+      <div class="avatar-tip">Replace this circle with your real photo</div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="sec-title">About</div>
+    <p>I am a cross-disciplinary scientist and entrepreneur at the forefront of <b>Medical-Engineering Integration</b>, currently leading the technological vision at <b>Thuspine</b> (backed by Tsinghua University, the Chinese Academy of Sciences, and Peking University Third Hospital).</p>
+    <p>My mission is to build the <b>"Scale AI" for human surface physiological data</b> &mdash; transforming how we decode, analyze, and intervene in human movement and chronic pain.</p>
+    <p>Before co-founding Thuspine, I dedicated my career to bridging next-generation flexible materials with domain-specific AI models. I believe the next frontier of AI is not just about computing power, but about capturing the <b>"first-principle data" of human biology</b> through seamless, high-fidelity wearable technologies &mdash; proving that superior AI requires equally superior hardware as its data entrance.</p>
+  </div>
+</section>
+
+<section id="expertise" class="soft">
+  <div class="wrap">
+    <div class="sec-title">Research &amp; Focus Areas</div>
+    <div class="sec-sub">Four pillars that span fundamental material science to clinical RCT validation.</div>
+    <div class="grid-4">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 8l8-5 8 5M4 8v8l8 5 8-5V8"/></svg></div>
+        <h3>Next-Gen Wearable Sensing</h3>
+        <p>BCI signal acquisition and conformal electrodes &mdash; enabling dynamic, motion-artifact-free, long-term biopotential recording.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M9 10h6M9 14h6"/></svg></div>
+        <h3>Domain-Specific AI (Vertical AI)</h3>
+        <p>Multi-modal deep learning (GNNs + Transformers) and reinforcement learning for personalized, real-time healthcare intervention.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6M4 12v5h5"/></svg></div>
+        <h3>Closed-loop Digital Therapeutics</h3>
+        <p>End-to-end ecosystem: AI Hardware &rarr; APP Analytics &rarr; Cloud Clinical Decision Support for musculoskeletal (MSK) diseases.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+        <h3>Human Data Infrastructure</h3>
+        <p>Standardizing sEMG &amp; kinematic data to empower biological AI (clinical rehab) and physical AI (humanoid robots &amp; HCI).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <div class="sec-title">Selected Impact</div>
+    <div class="sec-sub">From lab breakthrough to a real-world, clinically validated medical device.</div>
+    <div class="stats">
+      <div class="stat"><div class="num">48h</div><div class="lbl">Continuous monitoring, clinical-grade SNR</div></div>
+      <div class="stat"><div class="num">&gt;50%</div><div class="lbl">Reduction in chronic pain recurrence</div></div>
+      <div class="stat"><div class="num">1st</div><div class="lbl">Closed-loop (Monitor-Alert-Intervene) DTx</div></div>
+      <div class="stat"><div class="num">RCT</div><div class="lbl">PKU Third Hospital, 100+ cohort</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="venture" class="soft">
+  <div class="wrap">
+    <div class="sec-title">Venture &middot; Thuspine</div>
+    <div class="sec-sub">The AI infrastructure for human surface physiological data.</div>
+    <div class="hl">
+      <div class="hl-box">
+        <h3>What we build</h3>
+        <div class="org">LMP-Flex Wearable Platform + "Harness" AI Framework</div>
+        <ul>
+          <li>Semi-liquid-metal flexible electrodes breaking the "impossible triangle" of dynamic, comfortable &amp; medical-grade sensing.</li>
+          <li>sEMG sensing fused with Graph Neural Networks, Clinical Memory and RAG.</li>
+          <li>The world's first evidence-based closed-loop digital therapeutic for chronic neck &amp; shoulder pain.</li>
+        </ul>
+      </div>
+      <div class="hl-box">
+        <h3>Backed by</h3>
+        <div class="org">Science &middot; Clinical &middot; Industry</div>
+        <ul>
+          <li>Tsinghua University &mdash; flexible materials &amp; AI research.</li>
+          <li>Chinese Academy of Sciences &mdash; advanced sensing &amp; materials.</li>
+          <li>Peking University Third Hospital &mdash; clinical RCT validation.</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">Flexible Electronics</span>
+          <span class="badge">Vertical AI</span>
+          <span class="badge">Digital Therapeutics</span>
+          <span class="badge">BCI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-title">Get in touch</div>
+    <div class="sec-sub">Open to scientific collaboration, clinical partnerships, and investor conversations.</div>
+    <div class="mail">Email: you@example.com</div>
+    <div class="socials" style="justify-content:center;margin-top:20px">
+      <a href="https://www.linkedin.com/in/%E5%86%B0-%E6%9D%8E-b78804442/" target="_blank">in&nbsp;LinkedIn</a>
+      <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">&copy; <span id="y"></span> Bing Li &middot; Founder &amp; Chief AI Scientist, Thuspine &middot; Hosted on GitHub Pages</div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
