@@ -1,214 +1,185 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bing Li 李冰 (binglihealth) | Founder & Chief AI Scientist @ Thuspine 清脊智行</title>
-<meta name="description" content="Bing Li 李冰 (also known as Ethen Li) — Founder & Chief AI Scientist at Thuspine. Building the AI Infrastructure for Human Surface Physiological Data. Flexible Electronics × Vertical AI × Digital Therapeutics.">
+<title>Bing Li (binglihealth) — Founder & Chief AI Scientist, Thuspine</title>
+<meta name="description" content="Bing Li (also known as Ethen Li) — Founder & Chief AI Scientist at Thuspine. Building the AI infrastructure for human surface physiological data. Flexible electronics × vertical AI × digital therapeutics.">
 <link rel="canonical" href="https://binglihealth.github.io/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23143A5E'/><text x='50' y='66' font-size='46' font-family='Georgia' font-weight='bold' fill='%23C29A3F' text-anchor='middle'>BL</text></svg>">
-<meta property="og:title" content="Bing Li 李冰 · Founder & Chief AI Scientist @ Thuspine">
-<meta property="og:description" content="Building the AI Infrastructure for Human Surface Physiological Data.">
+<meta property="og:title" content="Bing Li · Founder & Chief AI Scientist @ Thuspine">
+<meta property="og:description" content="Building the AI infrastructure for human surface physiological data.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Bing Li","alternateName":["李冰","Ethen Li","binglihealth"],"url":"https://binglihealth.github.io/","jobTitle":"Founder & Chief AI Scientist","worksFor":{"@type":"Organization","name":"Thuspine","url":"https://www.thuspine.com"},"sameAs":["https://www.linkedin.com/in/binglihealth/","https://github.com/binglihealth","https://www.thuspine.com"]}
+{"@context":"https://schema.org","@type":"Person","name":"Bing Li","alternateName":["Ethen Li","binglihealth"],"url":"https://binglihealth.github.io/","jobTitle":"Founder & Chief AI Scientist","worksFor":{"@type":"Organization","name":"Thuspine","url":"https://www.thuspine.com"},"sameAs":["https://www.linkedin.com/in/binglihealth/","https://github.com/binglihealth","https://www.thuspine.com"]}
 </script>
 <style>
-:root{--navy:#143A5E;--navy-deep:#0E2A45;--gold:#C29A3F;--teal:#1E9E96;--ink:#1C2833;--muted:#5E6E7E;--line:#E3E8EF;--bg-soft:#F6F8FA}
+:root{--navy:#143A5E;--deep:#0E2A45;--gold:#C29A3F;--teal:#1E9E96;--ink:#1C2833;--muted:#5E6E7E;--line:#E3E8EF;--soft:#F6F8FA;--mono:"SF Mono","JetBrains Mono",Consolas,monospace}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Inter","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.78;-webkit-font-smoothing:antialiased;background:#fff}
-a{text-decoration:none;color:inherit}
-.wrap{max-width:1060px;margin:0 auto;padding:0 26px}
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.brand{font-weight:700;font-size:1.02rem;color:var(--navy)}
-.brand em{font-style:normal;color:var(--gold);font-family:Georgia,serif}
-.links{display:flex;gap:24px}
-.links a{color:var(--muted);font-size:.92rem;font-weight:500}
-.links a:hover{color:var(--navy)}
-.hero{background:linear-gradient(160deg,#0E2A45,#143A5E 55%,#1B4A73);color:#fff;padding:100px 0 84px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(880px 380px at 85% -5%,rgba(194,154,63,.14),transparent 60%),radial-gradient(700px 300px at 0% 110%,rgba(30,158,150,.12),transparent 55%)}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
-.kicker{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.74rem;font-weight:600;margin-bottom:18px}
-.hero h1{font-size:2.9rem;font-weight:800;line-height:1.15}
-.hero h1 span{font-family:Georgia,"Songti SC",serif;font-weight:400}
-.hero .en{font-family:Georgia,serif;font-style:italic;color:rgba(255,255,255,.6);font-size:1rem;margin-top:8px}
-.handle{font-family:"SF Mono",Consolas,monospace;color:var(--gold);font-size:.85rem;margin-top:14px}
-.handle::before{content:"@ ";opacity:.7}
-.tagline{font-size:1.18rem;font-weight:600;margin-top:26px}
-.tagline-en{font-size:.92rem;font-family:Georgia,serif;font-style:italic;color:rgba(255,255,255,.55);margin-top:6px}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;font-weight:600;font-size:.94rem}
-.btn-gold{background:var(--gold);color:var(--navy-deep)}
-.btn-gold:hover{background:#D4AC52}
-.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.f-photo{width:230px;height:230px;border-radius:50%;background:linear-gradient(135deg,#0E2A45,#1E9E96);display:flex;align-items:center;justify-content:center;font-size:3.4rem;font-weight:800;color:#fff;justify-self:center;box-shadow:0 20px 44px rgba(0,0,0,.35)}
-.f-photo-tip{font-size:.78rem;color:rgba(255,255,255,.5);text-align:center;margin-top:12px}
-.trust{background:var(--bg-soft);border-bottom:1px solid var(--line);padding:28px 0}
-.trust .wrap{display:flex;flex-wrap:wrap;gap:16px 52px;justify-content:center;text-align:center}
-.t-item{font-size:.86rem;color:var(--muted)}
-.t-item b{display:block;color:var(--navy);font-size:1.02rem}
-section{padding:78px 0}
-.soft{background:var(--bg-soft)}
-.sec-title{font-size:1.6rem;font-weight:800;color:var(--navy)}
-.sec-title::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:12px}
-.sec-sub{color:var(--muted);margin:16px 0 36px;max-width:720px}
-.about p{font-size:1.03rem;margin-bottom:16px;max-width:760px}
+body{font-family:"Inter","Noto Sans SC",sans-serif;color:var(--ink);line-height:1.75;background:#fff;-webkit-font-smoothing:antialiased}
+a{color:var(--navy);text-decoration:none}
+a:hover{color:var(--teal)}
+.wrap{max-width:880px;margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono)}
+/* top bar — researcher style */
+.top{border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.top .id{font-family:var(--mono);font-size:.9rem;color:var(--navy)}
+.top .id::before{content:"$ ";color:var(--teal)}
+.top nav{display:flex;gap:22px}
+.top nav a{font-size:.88rem;color:var(--muted);font-weight:500}
+.top nav a:hover{color:var(--navy)}
+/* hero */
+.hero{padding:90px 0 70px;border-bottom:1px solid var(--line)}
+.kicker{font-family:var(--mono);font-size:.78rem;color:var(--teal);letter-spacing:.12em;margin-bottom:16px}
+h1{font-size:2.7rem;font-weight:800;color:var(--deep);line-height:1.15;letter-spacing:-.02em}
+.h-cn{font-size:1.05rem;color:var(--muted);margin-top:8px}
+.handle{font-family:var(--mono);color:var(--gold);font-size:.85rem;margin-top:14px}
+.handle::before{content:"@ ";opacity:.6}
+.lede{font-size:1.12rem;margin-top:28px;max-width:640px;color:var(--ink)}
+.lede b{color:var(--navy)}
+.links-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.pill{font-family:var(--mono);font-size:.82rem;border:1px solid var(--line);border-radius:999px;padding:8px 18px;color:var(--navy)}
+.pill:hover{border-color:var(--teal);color:var(--teal)}
+.pill.dark{background:var(--deep);color:#fff;border-color:var(--deep)}
+.pill.dark:hover{background:var(--navy);color:var(--gold)}
+/* sections */
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.sec-label{font-family:var(--mono);font-size:.78rem;color:var(--teal);letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
+h2{font-size:1.5rem;font-weight:800;color:var(--deep);margin-bottom:18px}
+.about p{margin-bottom:16px;font-size:1.02rem}
 .about b{color:var(--navy)}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}
-.card .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:8px}
-.card h3{font-size:1.06rem;font-weight:700;color:var(--navy);margin-bottom:10px}
-.card p{font-size:.92rem;color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.stat{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:26px 16px;text-align:center}
-.stat .num{font-size:1.9rem;font-weight:800;color:var(--navy)}
-.stat .num small{font-size:1rem;color:var(--gold)}
-.stat .lbl{font-size:.8rem;color:var(--muted);margin-top:8px}
-.stat .src{font-size:.7rem;color:#9AA8B6;margin-top:4px}
-.venture{background:var(--navy-deep);color:#fff}
-.venture .sec-title{color:#fff}
-.venture .sec-sub{color:rgba(255,255,255,.65)}
-.v-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
-.v-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:30px}
-.v-box h3{font-size:1.15rem;margin-bottom:6px}
-.v-box .org{color:var(--gold);font-size:.87rem;font-weight:600;margin-bottom:16px}
-.v-box ul{list-style:none}
-.v-box li{padding-left:24px;position:relative;margin-bottom:11px;font-size:.94rem;color:rgba(255,255,255,.85)}
-.v-box li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.badge{background:rgba(194,154,63,.12);color:var(--gold);border:1px solid rgba(194,154,63,.35);border-radius:6px;padding:5px 12px;font-size:.79rem;font-weight:600}
-.contact{text-align:center}
-.contact .mail{font-size:1.2rem;font-weight:700;color:var(--navy)}
-.contact .mail a:hover{color:var(--teal)}
-.foot{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:26px 0;font-size:.85rem;text-align:center}
-.foot a{color:var(--gold)}
-@media(max-width:880px){.links{display:none}.hero .wrap{grid-template-columns:1fr}.hero h1{font-size:2.1rem}.grid-2,.v-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.f-photo{justify-self:center}}
+/* research pillars — numbered list style */
+.item{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0}
+.item .no{font-family:var(--mono);color:var(--gold);font-weight:700;font-size:1rem;padding-top:2px}
+.item h3{font-size:1.05rem;color:var(--deep);margin-bottom:6px}
+.item p{font-size:.93rem;color:var(--muted)}
+/* verified metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{border:1px solid var(--line);border-radius:10px;padding:22px 16px;text-align:center}
+.metric .v{font-family:var(--mono);font-size:1.5rem;font-weight:700;color:var(--deep)}
+.metric .v small{font-size:.9rem;color:var(--gold)}
+.metric .l{font-size:.78rem;color:var(--muted);margin-top:8px}
+.metric .s{font-size:.68rem;color:#9AA8B6;margin-top:3px;font-family:var(--mono)}
+/* venture strip */
+.v-strip{background:var(--deep);color:#fff;padding:56px 0}
+.v-strip h2{color:#fff}
+.v-strip p{color:rgba(255,255,255,.75);max-width:660px;margin-bottom:18px}
+.v-strip .facts{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.v-strip .facts span{font-family:var(--mono);font-size:.78rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:6px 12px;color:var(--gold)}
+.v-strip a.cta{display:inline-flex;background:var(--gold);color:var(--deep);padding:12px 24px;border-radius:8px;font-weight:600;font-size:.92rem}
+.v-strip a.cta:hover{background:#D4AC52;color:var(--deep)}
+/* contact */
+.contact{padding:64px 0}
+.contact .mail{font-family:var(--mono);font-size:1.05rem;color:var(--teal);font-weight:600}
+footer{padding:26px 0;color:#9AA8B6;font-size:.8rem;font-family:var(--mono)}
+@media(max-width:720px){.top nav{display:none}h1{font-size:2rem}.metrics{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
 
-<nav class="nav">
+<div class="top">
   <div class="wrap">
-    <div class="brand">Bing Li <em>李冰</em></div>
-    <div class="links">
-      <a href="#about">关于</a><a href="#focus">方向</a><a href="#impact">成果</a><a href="#venture">Thuspine</a><a href="#contact">联系</a>
-    </div>
+    <div class="id">binglihealth — personal page</div>
+    <nav><a href="#about">About</a><a href="#research">Research</a><a href="#progress">Progress</a><a href="#venture">Venture</a><a href="#contact">Contact</a></nav>
   </div>
-</nav>
+</div>
 
 <header class="hero">
   <div class="wrap">
-    <div>
-      <div class="kicker">Founder · Chief AI Scientist · 医工交叉</div>
-      <h1>Bing Li <span>李冰</span></h1>
-      <div class="en">Founder &amp; Chief AI Scientist, Thuspine 清脊智行</div>
-      <div class="handle">binglihealth</div>
-      <div class="tagline">构建人体体表生理数据的 AI 基础设施。</div>
-      <div class="tagline-en">Building the AI Infrastructure for Human Surface Physiological Data.</div>
-      <div class="cta">
-        <a class="btn btn-gold" href="https://www.thuspine.com" target="_blank">了解 Thuspine 清脊智行 →</a>
-        <a class="btn btn-ghost" href="mailto:marketing@thuspine.com">合作与交流</a>
-      </div>
-    </div>
-    <div>
-      <!-- 上传真实正装照片：把下行注释替换为 <img src="photo.jpg" class="f-photo" style="object-fit:cover"> -->
-      <div class="f-photo">李</div>
-      <div class="f-photo-tip">[占位] 替换为真实正装/实验室照片</div>
+    <div class="kicker">FOUNDER · CHIEF AI SCIENTIST · MEDICAL-ENGINEERING</div>
+    <h1>Bing Li</h1>
+    <div class="h-cn">李冰 · Thuspine 清脊智行</div>
+    <div class="handle">binglihealth</div>
+    <p class="lede">Building the <b>AI infrastructure for human surface physiological data</b> — where flexible electronics meet vertical AI and digital therapeutics. My conviction: frontier AI needs equally frontier hardware as its data entrance.</p>
+    <div class="links-row">
+      <a class="pill dark" href="https://www.thuspine.com" target="_blank">Thuspine ↗</a>
+      <a class="pill" href="https://www.linkedin.com/in/binglihealth/" target="_blank">linkedin</a>
+      <a class="pill" href="https://github.com/binglihealth" target="_blank">github</a>
+      <a class="pill" href="mailto:libing20@tsinghua.org.cn">contact</a>
     </div>
   </div>
 </header>
 
-<div class="trust">
+<section id="about">
   <div class="wrap">
-    <div class="t-item"><b>Nature 系列期刊成果 (2025)</b>核心合作论文发表</div>
-    <div class="t-item"><b>两项核心专利已获授权</b>柔性传感核心技术</div>
-    <div class="t-item"><b>临床研究规范化推进中</b>医院伦理审批已通过</div>
-    <div class="t-item"><b>产学研协同</b>清华 · 中科院 · 港理工 · 北医三院</div>
-  </div>
-</div>
-
-<section id="about" class="about">
-  <div class="wrap">
-    <div class="sec-title">关于我</div>
-    <p style="margin-top:24px">我是医工交叉方向的科学家与创业者，现任 <b><a href="https://www.thuspine.com" style="color:var(--teal)">Thuspine 清脊智行</a></b> 创始人兼首席AI科学家。公司以清华大学、中国科学院、香港理工大学、北京大学第三医院的合作研究体系为支撑，致力于构建人体体表生理数据的 AI 基础设施。</p>
-    <p>我的使命是打造人体体表生理数据的 <b>"Scale AI"</b>——让每一次肌肉缩放都成为可量化的健康洞察。我相信下一代 AI 的前沿不只在算力，而在于通过高保真柔性穿戴技术，采集人体生物学的<b>"第一性数据"</b>：顶尖的 AI，需要同样顶尖的硬件作为数据入口。</p>
-    <p>全网各平台请通过 <b>binglihealth</b>（LinkedIn / GitHub）找到我；国内合作语境中，请称我为 <b>李冰</b>。</p>
-  </div>
-</section>
-
-<section id="focus" class="soft">
-  <div class="wrap">
-    <div class="sec-title">研究与专注方向</div>
-    <div class="sec-sub">从底层材料科学到临床验证路径的全链条四个支柱。</div>
-    <div class="grid-2">
-      <div class="card"><div class="tag">01 · Hardware</div><h3>新一代柔性穿戴传感</h3><p>半液态金属柔性电极与共形结构设计，突破"医疗级精度 · 长期舒适 · 动态场景"的不可能三角；免剃毛、免凝胶的日常化采集体验。</p></div>
-      <div class="card"><div class="tag">02 · Vertical AI</div><h3>领域垂直 AI 模型</h3><p>图神经网络 × Transformer 的多模态肌电建模：跨用户零标定、免源漂移补偿双引擎，让模型开箱即用、越用越准。</p></div>
-      <div class="card"><div class="tag">03 · Digital Therapeutics</div><h3>闭环数字健康干预</h3><p>"监测–预警–干预–量化"四环方法学：在不适升级之前识别、在代偿发生一刻矫正，伴随式而非替代式医疗。</p></div>
-      <div class="card"><div class="tag">04 · Data Infrastructure</div><h3>人体数据基础设施</h3><p>肌电数据维度体系与数据标准化建设——既服务临床康复研究，也面向具身智能与人机交互的长期数据需求。</p></div>
+    <div class="sec-label">// About</div>
+    <div class="about">
+      <p>I am a cross-disciplinary scientist and entrepreneur working at the intersection of <b>flexible electronics, machine learning, and clinical rehabilitation</b>. I currently lead the technology vision at <a href="https://www.thuspine.com" style="color:var(--teal);font-weight:600">Thuspine</a>, a venture supported by a collaborative research network spanning <b>Tsinghua University, the Chinese Academy of Sciences, Hong Kong Polytechnic University, and Peking University Third Hospital</b>.</p>
+      <p>My work focuses on a simple observation: medicine happens inside hospitals, but life — and relapse — happens outside. Closing that gap requires capturing <b>first-principle biological data</b> from the body surface, in daily living, with clinical-grade fidelity.</p>
+      <p>Across platforms I go by <b>binglihealth</b> (LinkedIn · GitHub). In academic and industry contexts in China, I am <b>李冰 (Li Bing)</b>.</p>
     </div>
   </div>
 </section>
 
-<section id="impact">
+<section id="research" style="background:var(--soft)">
   <div class="wrap">
-    <div class="sec-title">已验证的技术进展</div>
-    <div class="sec-sub">以下均为可在实验室记录、专利文件与合作协议中查验的技术性指标。</div>
-    <div class="stats">
-      <div class="stat"><div class="num">48<small>h+</small></div><div class="lbl">柔性电极连续佩戴验证</div><div class="src">实验室人体验证</div></div>
-      <div class="stat"><div class="num">42–45<small>dB</small></div><div class="lbl">肌电采集信噪比</div><div class="src">实验室验证</div></div>
-      <div class="stat"><div class="num">2<small>项</small></div><div class="lbl">核心技术专利获授权</div><div class="src">国家知识产权局</div></div>
-      <div class="stat"><div class="num">4<small>家</small></div><div class="lbl">产学研合作研究体系</div><div class="src">清华 · 中科院 · 港理工 · 北医三院</div></div>
+    <div class="sec-label">// Research & Focus</div>
+    <h2>Four pillars, one data pipeline</h2>
+    <div class="item">
+      <div class="no">01</div>
+      <div><h3>Next-generation wearable sensing</h3>
+      <p>Semi-liquid-metal flexible electrodes and conformal structures — pursuing clinical-grade signal quality, long-term comfort, and dynamic use cases simultaneously (the "impossible triangle" of electrode design).</p></div>
+    </div>
+    <div class="item">
+      <div class="no">02</div>
+      <div><h3>Vertical AI for biosignals</h3>
+      <p>Multi-modal sEMG modeling with GNNs and Transformers: cross-user zero-calibration and drift-adaptive inference — models that work out of the box and improve with use.</p></div>
+    </div>
+    <div class="item">
+      <div class="no">03</div>
+      <div><h3>Closed-loop digital therapeutics</h3>
+      <p>A monitor → alert → intervene → prove methodology. Complementing clinicians, never replacing them — with intervention delivered before symptoms escalate.</p></div>
+    </div>
+    <div class="item">
+      <div class="no">04</div>
+      <div><h3>Human data infrastructure</h3>
+      <p>Standardized sEMG data dimensions and protocols — serving clinical research today, embodied intelligence and HCI tomorrow.</p></div>
     </div>
   </div>
 </section>
 
-<section id="venture" class="venture">
+<section id="progress">
   <div class="wrap">
-    <div class="sec-title">Venture · Thuspine 清脊智行</div>
-    <div class="sec-sub">面向科研、临床与大众健康三类场景的人体体表数据全链路服务商。</div>
-    <div class="v-grid">
-      <div class="v-box">
-        <h3>我们在做什么</h3>
-        <div class="org">柔性传感平台 × 垂直 AI 框架</div>
-        <ul>
-          <li>柔性传感硬件：按需采集与监测，覆盖体表信号提取、处理与应用。</li>
-          <li>数据服务与标准化：脱敏授权、API 调用与 SaaS 服务。</li>
-          <li>模型与领域智能：专科专病模型与个性化健康服务。</li>
-          <li>发展里程碑：工信部新工科奖项 · BSIC Global 科创奖 · 国家火炬科创库 · 北京市数字医疗概念验证重点项目。</li>
-        </ul>
-      </div>
-      <div class="v-box">
-        <h3>合作研究体系</h3>
-        <div class="org">科学 · 临床 · 产业</div>
-        <ul>
-          <li>清华大学 — 柔性材料与 AI 联合研究。</li>
-          <li>中国科学院 — 先进传感与液态金属工艺。</li>
-          <li>香港理工大学 — 全球领先颈肩痛康复疗法科研合作与授权。</li>
-          <li>北京大学第三医院 — 临床研究合作，伦理审批已通过。</li>
-        </ul>
-        <div class="badges"><span class="badge">Flexible Electronics</span><span class="badge">Vertical AI</span><span class="badge">DTx</span><span class="badge">HK Incorporated</span></div>
-      </div>
+    <div class="sec-label">// Verified Progress</div>
+    <h2>Technical milestones, all auditable</h2>
+    <p style="color:var(--muted);font-size:.94rem;margin-bottom:26px">Every figure below is verifiable against lab records, patent certificates, or institutional agreements.</p>
+    <div class="metrics">
+      <div class="metric"><div class="v">48<small>h+</small></div><div class="l">Continuous wear, flexible electrodes</div><div class="s">lab-verified</div></div>
+      <div class="metric"><div class="v">42–45<small>dB</small></div><div class="l">sEMG signal-to-noise ratio</div><div class="s">lab-verified</div></div>
+      <div class="metric"><div class="v">2</div><div class="l">Core patents granted (CNIPA)</div><div class="s">2026.08</div></div>
+      <div class="metric"><div class="v">4</div><div class="l">Institutional research partners</div><div class="s">THU · CAS · PolyU · PKUTH</div></div>
     </div>
-    <div style="margin-top:28px"><a class="btn btn-gold" href="https://www.thuspine.com" target="_blank">访问 www.thuspine.com →</a></div>
+    <div style="margin-top:26px;font-family:var(--mono);font-size:.82rem;color:var(--muted)">
+      &gt; selected external recognition: <span style="color:var(--navy)">Nature-family journal publication (2025)</span> · MIIT New Engineering Innovation Award · BSIC Global Award · National Torch Program inclusion · Beijing Digital Health PoV Program
+    </div>
+  </div>
+</section>
+
+<section id="venture" class="v-strip">
+  <div class="wrap">
+    <div class="sec-label" style="color:var(--gold)">// Venture</div>
+    <h2>Thuspine 清脊智行</h2>
+    <p>A full-stack provider of human surface physiological data — hardware sensing, data services and standardization, vertical AI models, and clinically-informed intervention — serving research, clinical, and consumer health scenarios.</p>
+    <div class="facts">
+      <span>flexible-sensing platform</span><span>vertical-AI framework</span><span>closed-loop DTx methodology</span><span>HK incorporated</span>
+    </div>
+    <a class="cta" href="https://www.thuspine.com" target="_blank">Visit www.thuspine.com →</a>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="wrap">
-    <div class="sec-title" style="display:inline-block">联系</div>
-    <div class="sec-sub" style="margin-left:auto;margin-right:auto">欢迎科研合作、临床协作与产业交流。</div>
-    <div class="mail"><a href="mailto:marketing@thuspine.com">marketing@thuspine.com</a></div>
-    <div class="cta" style="justify-content:center;margin-top:24px">
-      <a class="btn" style="background:var(--navy);color:#fff" href="https://www.linkedin.com/in/binglihealth/" target="_blank">in LinkedIn</a>
-      <a class="btn" style="background:var(--navy);color:#fff" href="https://github.com/binglihealth" target="_blank">GitHub</a>
-    </div>
+    <div class="sec-label">// Contact</div>
+    <h2>Collaboration & inquiries</h2>
+    <p style="color:var(--muted);margin-bottom:18px">Research collaboration, clinical partnership, or venture-related conversations.</p>
+    <div class="mail"><a href="mailto:libing20@tsinghua.org.cn">libing20@tsinghua.org.cn</a></div>
   </div>
 </section>
 
-<footer class="foot">
-  <div class="wrap">© <span id="year"></span> Bing Li 李冰 · Founder &amp; Chief AI Scientist, <a href="https://www.thuspine.com">Thuspine 清脊智行</a> · binglihealth</div>
+<footer>
+  <div class="wrap">© <span id="year"></span> Bing Li · binglihealth · powered by GitHub Pages</div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
